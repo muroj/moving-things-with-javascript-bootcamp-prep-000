@@ -12,10 +12,10 @@ function moveDodgerLeft() {
 
 function moveDodgerRight() {
   var dodger = document.getElementById('dodger')
-  var rightPos = dodger.style.left.replace('px', '')
-  var rightPosNum = parseInt(rightPos, 10)
+  var leftPos = dodger.style.left.replace('px', '')
+  var leftPosNum = parseInt(leftPos, 10)
  
-  if (rightPosNum > 0) {
-    dodger.style.right = `${rightPosNum - 1}px`
+  if (leftPosNum > 0) {
+    dodger.style.left = `${leftPosNum + 1}px`
   }
 }
