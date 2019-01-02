@@ -12,9 +12,15 @@
     <script type="text/javascript" src="index.js"></script>
     <script>
       document.addEventListener('keydown', function(e) {
-        if (e.which === 37) {
+        var LeftArrowKeyCode = 37
+        var RightArrowKeyCode = 39
+        
+        if (e.which === LeftArrowKeyCode) {
           moveDodgerLeft()
+        } else if  (e.which === RightArrowKeyCode) {
+          moveDodgerRight()
         }
+        
       })
     </script>
   </body>
