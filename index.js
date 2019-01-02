@@ -1,6 +1,7 @@
 const app = "I don't do much."
 
 function moveDodgerLeft() {
+  var dodger = document.getElementById('dodger')
   var leftNumbers = dodger.style.left.replace('px', '')
   var left = parseInt(leftNumbers, 10)
  
@@ -10,6 +11,7 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
+  var dodger = document.getElementById('dodger')
   var rightPos = dodger.style.left.replace('px', '')
   var rightPosNum = parseInt(rightPos, 10)
  
